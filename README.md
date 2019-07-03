@@ -20,3 +20,13 @@ select * from v$datafile;
 select * from dba_temp_files;
 select * from v$tempfile;
 ~~~~
+
+
+
+4) Killing a session.
+
+~~~~
+select * from v$session;
+select * from v$process;
+alter system kill session 'SID, serial#';
+~~~~
