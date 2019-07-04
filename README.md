@@ -30,3 +30,12 @@ select * from v$session;
 select * from v$process;
 alter system kill session 'SID, serial#';
 ~~~~
+
+
+5) SQL Plan
+
+~~~~
+select * from V$SQL where sql_id = '<<SQLID>>';
+select * from V$SQL_PLAN where sql_id = '<<SQLID>>';
+select * from V$SQL_plan_statistics where sql_id = '<<SQLID>>';
+~~~~
