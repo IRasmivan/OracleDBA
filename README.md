@@ -39,9 +39,23 @@ select * from V$SQL where sql_id = '<<SQLID>>';
 select * from V$SQL_PLAN where sql_id = '<<SQLID>>';
 select * from V$SQL_plan_statistics where sql_id = '<<SQLID>>';
 
+~~~~
+
 5.1) SQL Stats
+~~~~
 select * from v$sysstat;
 select * from v$session;
 select * from v$sesstat;
 select * from v$process;
 ~~~~
+
+
+5.2) Wait
+
+```
+
+select * from v$system_event;
+select * from v$session_event;
+select * from v$session_wait;
+
+```
