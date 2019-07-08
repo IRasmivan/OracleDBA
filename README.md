@@ -53,9 +53,9 @@ select * from v$process;
 5.2) Wait
 
 ```
-
 select * from v$system_event;
 select * from v$session_event;
 select * from v$session_wait;
-
+select * from v$sys_time_model;
+select * from v$sess_time_model;
 ```
